@@ -1,9 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <h1><center><b><u>REGISTRATION FORM</u></b></center></h1>
+    <hr />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form - PHP/MySQL Demo Code</title>
+<style>
+    label{
+        color:rgb(219, 39, 210);
+        font-family: Impact;
+        font-size:25px;
+        margin-right: 10px;
+    }
+    
+    input{
+        width:250px;
+        background-color: aqua;
+        color:rgb(235, 16, 16);
+        height: 20px;
+        font-size: 20px;
+        
+    }
+    .button{
+        width: 100px;
+        background-color: rgb(219, 39, 210);
+        color:chartreuse;
+        font-size: 20px;
+        border-radius: 28px;
+        height: 40px;
+    
+    }
+    .button1{
+        height: 40px;
+    }
+    h1{
+        color:darkviolet; 
+    }
+    .legend1{
+        color:blue;
+        font-size: 30px;
+    }
+    .fd1{
+        background-color: rgb(214, 228, 20);
+    }
+    div{
+       
+        display:inline-block;
+    }
+</style>
+</head>
 
-    </head>
-    <body>
-        this is a html file
-    </body>
+<body bgcolor="cyan">
+<fieldset class="fd1">
+<legend class="legend1">Contact Form</legend>
+<form name="frmContact" method="post" action="index.html">
+<div>
+    <p>
+        <label for="Name">Name: </label>
+        <input type="text" name="txtName" id="txtName" required placeholder="name">
+        </p>
+</div>
+
+<div>
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="txtEmail" id="txtEmail" required placeholder="email">
+        </p>
+</div>
+
+<div>
+    <p>
+        <label for="phone">Phone:</label>
+        <input type="text" name="txtPhone" id="txtPhone" required placeholder="phone">
+        </p>
+</div>
+
+<div>
+    <p>
+        <label for="message">Message:</label>
+        <textarea name="txtMessage" id="txtMessage"></textarea>
+        </p>
+</div>
+
+<div>
+    <p>
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" required placeholder="password">
+</p>
+</div>
+
+<div>
+    <p>&nbsp;</p>
+<p>
+    
+<input  class= "button" type="submit" name="Submit" id="Submit" value="Submit" required>
+
+</p>
+</div>
+
+</form>
+</fieldset>
+</body>
 </html>
